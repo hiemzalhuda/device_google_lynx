@@ -2,10 +2,6 @@
 # SPDX-FileCopyrightText: 2021 The Android Open-Source Project
 # SPDX-License-Identifier: Apache-2.0
 #
-# DRAFT — updated from device_google_lynx branch 16 aosp_lynx.mk.
-# Only the product identity lines change to match the grizzly (17) pattern;
-# the hardware inherit stays gs201 (Tensor G2), NOT malibu.
-#
 
 $(call inherit-product, device/google/gs201/aosp_common.mk)
 $(call inherit-product, device/google/lynx/device-lynx.mk)

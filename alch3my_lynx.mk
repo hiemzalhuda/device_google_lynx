@@ -43,13 +43,13 @@ TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
 # Report the stock build these blobs come from; update it with the blobs.
-# TODO: replace TODO_17_BUILD_ID / TODO_17_BUILD_NUMBER with the real
-# stock Android 17 build for lynx (factory image / vendor blobs).
-# Do NOT keep the old Android 16 fingerprint BP4A.260205.001 here.
+# Stock build from LineageOS lineage-24.0 (CP3A.261005.002.A1),
+# via LOS commit "lynx: Update to CP3A.261005.002.A1" (2026-10-16).
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="lynx-user 17 TODO_17_BUILD_ID TODO_17_BUILD_NUMBER release-keys" \
-    BuildFingerprint=google/lynx/lynx:17/TODO_17_BUILD_ID/TODO_17_BUILD_NUMBER:user/release-keys \
-    BuildSystemFingerprint=google/generic_system_google/generic:17/TODO_17_BUILD_ID/TODO_17_BUILD_NUMBER:user/release-keys \
+    BuildDesc="lynx-user 17 CP3A.261005.002.A1 16269273 release-keys" \
+    BuildSystemDesc="generic_system_google-user 17 CP3A.261005.002.A1 16269273 release-keys" \
+    BuildFingerprint=google/lynx/lynx:17/CP3A.261005.002.A1/16269273:user/release-keys \
+    BuildSystemFingerprint=google/generic_system_google/generic:17/CP3A.261005.002.A1/16269273:user/release-keys \
     DeviceProduct=$(DEVICE_CODENAME)
 
 # The extracted blobs. This has to come after the inherits above, since it appends to
