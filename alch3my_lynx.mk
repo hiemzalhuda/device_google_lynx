@@ -43,13 +43,14 @@ TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
 # Report the stock build these blobs come from; update it with the blobs.
-# Stock build from LineageOS lineage-24.0 (CP3A.261005.002.A1),
-# via LOS commit "lynx: Update to CP3A.261005.002.A1" (2026-10-16).
+# Stock build CP2A.260705.006 - Alch3myOS 17 is still on CP2A
+# (Pyrtle93, 2026-11-22). BuildSystemDesc kept from LOS fix
+# e578eca, with CP2A values.
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="lynx-user 17 CP3A.261005.002.A1 16269273 release-keys" \
-    BuildSystemDesc="generic_system_google-user 17 CP3A.261005.002.A1 16269273 release-keys" \
-    BuildFingerprint=google/lynx/lynx:17/CP3A.261005.002.A1/16269273:user/release-keys \
-    BuildSystemFingerprint=google/generic_system_google/generic:17/CP3A.261005.002.A1/16269273:user/release-keys \
+    BuildDesc="lynx-user 17 CP2A.260705.006 15641320 release-keys" \
+    BuildSystemDesc="generic_system_google-user 17 CP2A.260705.006 15641320 release-keys" \
+    BuildFingerprint=google/lynx/lynx:17/CP2A.260705.006/15641320:user/release-keys \
+    BuildSystemFingerprint=google/generic_system_google/generic:17/CP2A.260705.006/15641320:user/release-keys \
     DeviceProduct=$(DEVICE_CODENAME)
 
 # The extracted blobs. This has to come after the inherits above, since it appends to
